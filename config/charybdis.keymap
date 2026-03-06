@@ -93,6 +93,16 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 48 49 50 51 52>; // Left side keys
             hold-trigger-on-release;
         };
+
+        mot: mot {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOT";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <200>;
+        };
     };
 
     macros {
@@ -207,11 +217,11 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp ESC         &kp N1          &kp N2    &kp N3        &kp N4    &kp N5     &kp N6          &kp N7         &kp N8     &kp N9     &kp N0    &kp DELETE
-&kp TAB         &kp Q           &kp W     &kp E         &kp R     &kp T               &kp Y  &kp U          &kp I      &kp O      &kp P     &kp BACKSPACE
-&kp RCTRL       &kp A           &kp S     &kp D         &kp F     &kp G               &kp H  &kp J          &kp K      &kp L      &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z           &kp X     &kp C         &kp V     &kp B               &kp N  &kp M          &kp COMMA  &kp DOT    &kp FSLH  &kp RIGHT_SHIFT
-                &kp LEFT_SHIFT  &mkp MB2  &kp LEFT_ALT  &mkp MB1  &kp SPACE  &kp RET         &kp RIGHT_GUI             &kp RCTRL
+&kp ESC         &kp N1          &kp N2      &kp N3        &kp N4    &kp N5     &kp N6          &kp N7         &kp N8     &kp N9     &kp N0    &kp DELETE
+&kp TAB         &kp Q           &kp W       &kp E         &kp R     &kp T               &kp Y  &kp U          &kp I      &kp O      &kp P     &kp BACKSPACE
+&kp RCTRL       &kp A           &kp S       &kp D         &kp F     &kp G               &kp H  &kp J          &kp K      &kp L      &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z           &kp X       &kp C         &kp V     &kp B               &kp N  &kp M          &kp COMMA  &kp DOT    &kp FSLH  &kp RIGHT_SHIFT
+                &kp LEFT_SHIFT  &mot 8 MB2  &kp LEFT_ALT  &mkp MB1  &kp SPACE  &kp RET         &kp RIGHT_GUI             &kp RCTRL
             >;
         };
 
