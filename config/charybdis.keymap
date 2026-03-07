@@ -203,6 +203,11 @@
             bindings = <&to 3>;
             key-positions = <50 52 51 49>;
         };
+
+        rest {
+            bindings = <&bootloader>;
+            key-positions = <51 55 52 53>;
+        };
     };
 
     keymap {
@@ -231,11 +236,11 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp ESC      &kp N1    &kp N2       &kp N3       &kp N4    &kp N5      &kp N6                &kp N7       &kp N8     &kp N9     &kp N0    &kp DELETE
-&mt ESC TAB  &kp Q     &kp W        &kp E        &kp R     &kp T                      &kp Y  &kp U        &kp I      &kp O      &kp P     &kp BACKSPACE
-&kp RCTRL    &kp A     &kp S        &kp D        &kp F     &kp G                      &kp H  &kp J        &kp K      &kp L      &kp SEMI  &mt DEL SQT
-&lshift      &kp Z     &kp X        &kp C        &kp V     &kp B                      &kp N  &kp M        &kp COMMA  &kp DOT    &kp FSLH  &rshift
-             &kp LALT  &mt ESC TAB  &lt 9 SPACE  &mkp MB1  &mot 8 MB2  &kp RIGHT_GUI         &lt 4 ENTER             &kp RCTRL
+&kp ESC      &kp N1       &kp N2    &kp N3          &kp N4    &kp N5      &kp N6                &kp N7       &kp N8     &kp N9     &kp N0    &kp DELETE
+&mt ESC TAB  &kp Q        &kp W     &kp E           &kp R     &kp T                      &kp Y  &kp U        &kp I      &kp O      &kp P     &kp BACKSPACE
+&kp RCTRL    &kp A        &kp S     &kp D           &kp F     &kp G                      &kp H  &kp J        &kp K      &kp L      &kp SEMI  &mt DEL SQT
+&lshift      &kp Z        &kp X     &kp C           &kp V     &kp B                      &kp N  &kp M        &kp COMMA  &kp DOT    &kp FSLH  &rshift
+             &lt 9 SPACE  &kp LALT  &mt ESCAPE TAB  &mkp MB1  &mot 8 MB2  &kp RIGHT_GUI         &lt 4 ENTER             &kp RCTRL
             >;
         };
 
