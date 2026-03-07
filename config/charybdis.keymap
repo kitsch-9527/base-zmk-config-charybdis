@@ -200,7 +200,7 @@
         };
 
         bt-0 {
-            bindings = <&bt BT_SEL 0>;
+            bindings = <&to 3>;
             key-positions = <50 52 51 49>;
         };
     };
@@ -235,7 +235,7 @@
 &mt ESC TAB  &kp Q     &kp W        &kp E        &kp R     &kp T                      &kp Y  &kp U        &kp I      &kp O      &kp P     &kp BACKSPACE
 &kp RCTRL    &kp A     &kp S        &kp D        &kp F     &kp G                      &kp H  &kp J        &kp K      &kp L      &kp SEMI  &mt DEL SQT
 &lshift      &kp Z     &kp X        &kp C        &kp V     &kp B                      &kp N  &kp M        &kp COMMA  &kp DOT    &kp FSLH  &rshift
-             &kp LALT  &lt 9 SPACE  &lt 9 SPACE  &mkp MB1  &mot 8 MB2  &kp RIGHT_GUI         &lt 4 ENTER             &kp RCTRL
+             &kp LALT  &mt ESC TAB  &lt 9 SPACE  &mkp MB1  &mot 8 MB2  &kp RIGHT_GUI         &lt 4 ENTER             &kp RCTRL
             >;
         };
 
@@ -267,11 +267,11 @@
             label = "RAISE";
             display-name = "Raise";
             bindings = <
-&kp ESC  &kp F1  &kp F2      &kp F3        &kp F4         &kp F5         &kp F6                &kp F7          &kp F8        &kp F9        &kp F10  &trans
-&trans   &trans  &CAC W      &kp C_VOL_UP  &kp LG(MINUS)  &kp LG(EQUAL)          &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &kp F11  &kp F12
-&trans   &none   &kp C_PREV  &kp C_PP      &kp C_NEXT     &kp LG(N0)             &kp F23       &kp F24         &none         &none         &none    &bootloader
-&trans   &none   &none       &kp C_VOL_DN  &none          &none                  &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none    &none
-         &trans  &trans      &trans        &trans         &trans         &trans                &trans                        &trans
+&to 0   &kp F1  &kp F2      &kp F3        &kp F4         &kp F5         &kp F6                &kp F7          &kp F8        &kp F9        &kp F10  &trans
+&trans  &trans  &CAC W      &kp C_VOL_UP  &kp LG(MINUS)  &kp LG(EQUAL)          &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &kp F11  &kp F12
+&trans  &none   &kp C_PREV  &kp C_PP      &kp C_NEXT     &kp LG(N0)             &kp F23       &kp F24         &none         &none         &none    &bootloader
+&trans  &none   &none       &kp C_VOL_DN  &none          &none                  &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none    &none
+        &trans  &trans      &trans        &trans         &trans         &trans                &trans                        &trans
             >;
         };
 
@@ -335,10 +335,10 @@
 
         num {
             bindings = <
-&trans         &trans           &trans     &trans     &trans      &trans            &trans                     &trans           &trans     &trans    &trans     &trans
-&trans         &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT               &kp CARET          &kp AMPS         &kp STAR   &kp LPAR  &kp RPAR   &trans
-&kp SEMICOLON  &kp N1           &kp N2     &kp N3     &kp N4      &kp N5                    &kp N6             &kp N7           &kp N8     &kp N9    &kp N0     &kp EQUAL
-&trans         &kp NUBS         &kp GRAVE  &kp TILDE  &kp LBRC    &kp LEFT_BRACKET          &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp COMMA  &kp DOT   &kp QMARK  &trans
+&trans         &trans           &trans     &trans     &trans      &trans            &trans                     &trans           &trans     &trans    &trans    &trans
+&trans         &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT               &kp CARET          &kp AMPS         &kp STAR   &kp LPAR  &kp RPAR  &trans
+&kp SEMICOLON  &kp N1           &kp N2     &kp N3     &kp N4      &kp N5                    &kp N6             &kp N7           &kp N8     &kp N9    &kp N0    &kp EQUAL
+&trans         &kp NUBS         &kp GRAVE  &kp TILDE  &kp LBRC    &kp LEFT_BRACKET          &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp COMMA  &kp DOT   &kp PIPE  &trans
                &trans           &trans     &trans     &trans      &trans            &trans                     &trans                      &trans
             >;
         };
