@@ -208,6 +208,11 @@
             bindings = <&bootloader>;
             key-positions = <51 55 52 53>;
         };
+
+        roll {
+            bindings = <&mo 5>;
+            key-positions = <27 26>;
+        };
     };
 
     keymap {
