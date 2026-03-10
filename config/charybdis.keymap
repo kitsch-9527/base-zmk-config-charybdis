@@ -236,10 +236,10 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp ESC      &kp N1       &kp N2    &kp N3          &kp N4    &kp N5      &kp N6                &kp N7     &kp N8     &kp N9       &kp N0    &kp DELETE
-&mt ESC TAB  &kp Q        &kp W     &kp E           &kp R     &kp T                      &kp Y  &kp U      &kp I      &kp O        &kp P     &kp BACKSPACE
-&kp RCTRL    &kp A        &kp S     &kp D           &kp F     &kp G                      &kp H  &kp J      &kp K      &kp L        &kp SEMI  &mt DEL SQT
-&lshift      &kp Z        &kp X     &kp C           &kp V     &kp B                      &kp N  &kp M      &kp COMMA  &kp DOT      &kp FSLH  &rshift
+&kp ESC      &kp N1       &kp N2    &kp N3          &kp N4    &kp N5      &kp N6                &kp N7     &kp N8     &kp N9       &kp N0        &kp DELETE
+&mt ESC TAB  &kp Q        &kp W     &kp E           &kp R     &kp T                      &kp Y  &kp U      &kp I      &kp O        &kp P         &kp BACKSPACE
+&kp RCTRL    &kp A        &kp S     &kp D           &kp F     &kp G                      &kp H  &kp J      &kp K      &kp L        &kp SEMI      &mt DEL SQT
+&lshift      &lt 10 Z     &kp X     &kp C           &kp V     &kp B                      &kp N  &kp M      &kp COMMA  &kp DOT      &lt 10 SLASH  &rshift
              &lt 9 SPACE  &kp LALT  &mt ESCAPE TAB  &mkp MB1  &mot 8 MB2  &kp RIGHT_GUI         &kp RCTRL             &lt 4 ENTER
             >;
         };
@@ -345,6 +345,16 @@
 &kp SEMICOLON  &kp N1           &kp N2     &kp N3     &kp N4      &kp N5                    &kp N6             &kp N7           &kp N8     &kp N9    &kp N0    &kp EQUAL
 &trans         &kp PIPE         &kp TILDE  &kp GRAVE  &kp LBRC    &kp LEFT_BRACKET          &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp COMMA  &kp DOT   &kp BSLH  &trans
                &trans           &trans     &trans     &trans      &trans            &trans                     &trans                      &trans
+            >;
+        };
+
+        function {
+            bindings = <
+&trans  &trans    &trans     &trans    &trans     &trans  &trans          &trans     &trans    &trans     &trans    &trans
+&trans  &trans    &trans     &kp F23   &trans     &trans          &trans  &trans     &kp F23   &trans     &trans    &trans
+&trans  &kp LGUI  &kp LCTRL  &kp LALT  &kp LSHFT  &trans          &trans  &kp RSHFT  &kp RALT  &kp RCTRL  &kp RGUI  &trans
+&trans  &trans    &trans     &trans    &trans     &trans          &trans  &trans     &trans    &trans     &trans    &trans
+        &trans    &trans     &trans    &trans     &trans  &trans          &trans               &trans
             >;
         };
     };
