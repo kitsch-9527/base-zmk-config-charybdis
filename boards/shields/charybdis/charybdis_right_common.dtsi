@@ -1,4 +1,4 @@
-/*
+sd/*
  * Copyright (c) 2024 The ZMK Contributors
  * SPDX-License-Identifier: MIT
  *
@@ -57,7 +57,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <550>;
+        cpi = <450>;
         swap-xy;
         invert-x;
         invert-y;
